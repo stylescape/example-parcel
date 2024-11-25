@@ -17,7 +17,7 @@
         "stylescape": "^0.0.34"
     },
     "devDependencies": {
-        "@parcel/transformer-sass": "2.13.0",
+        "@parcel/transformer-sass": "2.13.1",
         "parcel": "2.13.0"
     }
 }
