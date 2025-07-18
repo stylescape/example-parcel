@@ -14,10 +14,10 @@
         "test": "npm run build"
     },
     "dependencies": {
-        "stylescape": "^0.1.28"
+        "stylescape": "^0.1.36"
     },
     "devDependencies": {
-        "@parcel/transformer-sass": "2.15.2",
-        "parcel": "2.15.2"
+        "@parcel/transformer-sass": "2.15.4",
+        "parcel": "2.15.4"
     }
 }
