@@ -1,5 +1,7 @@
 # Stylescape Parcel Example
 
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/stylescape/example-parcel)
+
 This example demonstrates how to integrate [Stylescape](https://github.com/stylescape/stylescape) with [Parcel](https://parceljs.org/), a zero-configuration web application bundler.
 
 ## About Stylescape
