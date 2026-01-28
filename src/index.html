@@ -1,71 +1,141 @@
 <!doctype html>
+<html lang="en" data-theme="light">
 
-<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Stylescape w/ Parcel</title>
+</head>
 
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="scss/main.scss">
-        <script type="module" src="js/main.js"></script>
-        <title>Stylescape w/ Webpack</title>
-    </head>
+<body>
+    <div class="frame_main">
 
-    <body>
-        <div class="">
-            <header class="">
-                <h1 class="">Stylescape</h1>
-                <a href="https://github.com/stylescape/example-webpack/" target="_blank" rel="noopener">View on GitHub</a>
+        <!-- Top Area - Header Ribbon -->
+        <div class="frame_main__area--top">
+            <header class="ribbon--top">
+                <div class="ribbon__slot--horizontal_left">
+                    <a href="https://github.com/stylescape/example-parcel/" target="_blank" rel="noopener">GitHub</a>
+                </div>
+                <div class="ribbon__slot--horizontal_center">
+                    <h1 class="ribbon__title">Stylescape + Parcel</h1>
+                </div>
+                <div class="ribbon__slot--horizontal_right">
+                    <label>
+                        <input type="checkbox" data-ss="theme-toggle">
+                        Dark Mode
+                    </label>
+                </div>
             </header>
-
-            <h1>Build Stylescape with Webpack</h1>
-
-            <div class="">
-                <p class="">You've successfully loaded the Stylescape + Webpack example! It's loaded up with <a href="https://scape.style/">Stylescape</a> and uses Webpack to compile and bundle our Sass and JavaScript.</p>
-                <p>If this button appears blue and the link appears purple, you've done it!</p>
-            </div>
-
-            <button type="button" class="">Toggle offcanvas</button>
-            <a id="" class="" href="#" role="button" title="Custom popover">Example popover</a>
-
-            <div class="" tabindex="-1" id="" aria-labelledby="">
-                <div class="">
-                    <h5 class="" id="">Offcanvas</h5>
-                    <button type="button" class="" aria-label="Close"></button>
-                </div>
-                <div class="">
-                    <div>
-                        Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
-                    </div>
-                    <div class="">
-                        <button class="" type="button" id="">
-                        Dropdown button
-                        </button>
-                        <ul class="" aria-labelledby="">
-                        <li><a class="" href="#">Action</a></li>
-                        <li><a class="" href="#">Another action</a></li>
-                        <li><a class="" href="#">Something else here</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <hr class="">
-
-            <h2>Graphic Languages</h2>
-            <p>Read more detailed information.</p>
-            <ul class="">
-                <li><a href="https://unit.gl/">unit.gl</a></li>
-                <li><a href="https://icon.gl/">icon.gl</a></li>
-                <li><a href="https://hue.gl/">hue.gl</a></li>
-                <li><a href="https://font.gl/">font.gl</a></li>
-                <li><a href="https://page.gl/">page.gl</a></li>
-                <li><a href="https://pack.gl/">pack.gl</a></li>
-                <li><a href="https://move.gl/">move.gl</a></li>
-            </ul>
-
-            <hr class="">
-
-            <p class="">Created and open sourced by the Stylescape team. Licensed MIT.</p>
         </div>
-    </body>
+
+        <!-- Left Sidebar -->
+        <div class="frame_main__area--middle_left">
+            <aside class="sidebar--left" data-ss="aside" data-ss-aside-menu data-ss-aside-switch>
+                <button class="flipper--left" type="button">Toggle Left</button>
+                <nav>
+                    <ul>
+                        <li><a href="#introduction">Introduction</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#accordion">Accordion</a></li>
+                    </ul>
+                </nav>
+            </aside>
+        </div>
+
+        <!-- Main Content Area -->
+        <div class="frame_main__area--middle_center">
+            <main>
+                <section id="introduction">
+                    <h2>Build Stylescape with Parcel</h2>
+                    <p>
+                        You've successfully loaded the Stylescape + Parcel example!
+                        This project demonstrates how to integrate <a href="https://scape.style/">Stylescape</a>
+                        with Parcel bundler to compile and bundle Sass and JavaScript.
+                    </p>
+                </section>
+
+                <section id="features">
+                    <h2>Features</h2>
+                    <ul>
+                        <li>Parcel bundler with zero configuration</li>
+                        <li>Sass compilation via @parcel/transformer-sass</li>
+                        <li>Stylescape components and utilities</li>
+                        <li>Hot module replacement for development</li>
+                    </ul>
+                </section>
+
+                <section id="accordion">
+                    <h2>Accordion Example</h2>
+                    <div data-ss="accordion">
+                        <details>
+                            <summary>What is Stylescape?</summary>
+                            <p>
+                                Stylescape is a modern CSS framework that provides a comprehensive
+                                set of components, utilities, and design tokens for building
+                                beautiful web interfaces.
+                            </p>
+                        </details>
+                        <details>
+                            <summary>Why use Parcel?</summary>
+                            <p>
+                                Parcel is a zero-configuration web application bundler that
+                                automatically handles Sass compilation, JavaScript bundling,
+                                and asset optimization out of the box.
+                            </p>
+                        </details>
+                        <details>
+                            <summary>How to get started?</summary>
+                            <p>
+                                Simply run <code>npm install</code> to install dependencies,
+                                then <code>npm start</code> to launch the development server
+                                with hot reloading.
+                            </p>
+                        </details>
+                    </div>
+                </section>
+
+                <hr>
+
+                <section>
+                    <h2>Graphic Languages</h2>
+                    <p>Explore the Stylescape ecosystem:</p>
+                    <ul>
+                        <li><a href="https://unit.gl/">unit.gl</a></li>
+                        <li><a href="https://icon.gl/">icon.gl</a></li>
+                        <li><a href="https://hue.gl/">hue.gl</a></li>
+                        <li><a href="https://font.gl/">font.gl</a></li>
+                        <li><a href="https://page.gl/">page.gl</a></li>
+                        <li><a href="https://pack.gl/">pack.gl</a></li>
+                        <li><a href="https://move.gl/">move.gl</a></li>
+                    </ul>
+                </section>
+            </main>
+        </div>
+
+        <!-- Right Sidebar -->
+        <div class="frame_main__area--middle_right">
+            <aside class="sidebar--right" data-ss="aside" data-ss-aside-menu data-ss-aside-switch>
+                <button class="flipper--right" type="button">Toggle Right</button>
+                <div>
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="https://scape.style/">Documentation</a></li>
+                        <li><a href="https://github.com/stylescape/">GitHub</a></li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+
+        <!-- Bottom Area - Footer Ribbon -->
+        <div class="frame_main__area--bottom">
+            <footer class="ribbon--bottom">
+                <p>Created and open sourced by the Stylescape team. Licensed MIT.</p>
+            </footer>
+        </div>
+
+    </div>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+
 </html>

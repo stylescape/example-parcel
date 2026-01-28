@@ -1,3 +1,2 @@
-// Import only the Stylescape components we need
-
-// Create an example
+import "../scss/styles.scss";
+import "stylescape";
