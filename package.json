@@ -23,7 +23,7 @@
         "stylescape": "^0.3.10"
     },
     "devDependencies": {
-        "@parcel/transformer-sass": "2.16.3",
+        "@parcel/transformer-sass": "2.16.4",
         "parcel": "2.16.3",
         "prettier": "^3.8.1",
         "stylelint": "^17.1.1",
